@@ -1,0 +1,284 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>VELLE — пошив женского белья на заказ</title>
+<meta name="description" content="VELLE — пошив женского белья по вашим меркам: комплекты, боди, корсеты и пеньюары из кружева и шёлка.">
+<meta property="og:title" content="VELLE — пошив женского белья">
+<meta property="og:description" content="Бельё, созданное только для вас.">
+<meta property="og:image" content="images/poster.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%230B0809'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' fill='%23D99AA5' text-anchor='middle'%3EV%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&amp;family=Jost:wght@300;400;500&amp;display=swap">
+<style>
+html{scroll-behavior:auto}
+section[id]{scroll-margin-top:84px}
+body{margin:0;background:#0B0809;-webkit-font-smoothing:antialiased}
+a{color:#F3E9E6;transition:color .4s ease}a:hover{color:#E8B4BD}
+input::placeholder,textarea::placeholder{color:#8F7A7D}
+input,textarea{transition:border-color .4s ease}
+input:focus,textarea:focus{outline:none;border-bottom-color:var(--accent)!important}
+.btn{transition:background-color .5s ease,color .5s ease,border-color .5s ease,transform .5s cubic-bezier(.2,.7,.2,1),box-shadow .5s ease}
+.btn:hover{transform:translateY(-2px);box-shadow:0 14px 36px -14px rgba(122,31,49,.7)}
+.btn-wine:hover{background-color:#8F2639!important;color:#F3E9E6}
+.btn-line:hover{border-color:var(--accent)!important;color:var(--accent)}
+.card{transition:border-color .6s ease,transform .6s cubic-bezier(.2,.7,.2,1),background-color .6s ease}
+.card:hover{border-color:var(--accent)!important;transform:translateY(-4px);background-color:#1E1014}
+.tile{transition:border-color .6s ease}
+.tile:hover{border-color:var(--accent)!important}
+.row{transition:padding-left .5s cubic-bezier(.2,.7,.2,1)}
+.row:hover{padding-left:12px}
+.nav-link{position:relative}
+.nav-link::after{content:"";position:absolute;left:0;right:0;bottom:-6px;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.7,.2,1)}
+.nav-link:hover::after{transform:scaleX(1)}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.intro{animation:fadeUp 1.1s cubic-bezier(.2,.7,.2,1) both}
+.d1{animation-delay:.15s}.d2{animation-delay:.3s}.d3{animation-delay:.45s}
+.intro-img{animation:fadeIn 1.6s ease .3s both}
+@supports (animation-timeline: view()){
+.reveal{animation:fadeUp linear both;animation-timeline:view();animation-range:entry 0% entry 45%}
+}
+@media (prefers-reduced-motion: reduce){
+.intro,.intro-img,.reveal{animation:none!important}
+.btn,.card,.tile,.row{transition:none!important}
+}
+@media (max-width: 860px){
+.nav-link{display:none}
+.hero{padding:48px 20px 72px!important;gap:40px!important}
+.hero-img{height:560px!important;flex-basis:100%!important}
+.sec{padding:72px 20px!important;gap:36px!important}
+.tile{flex-basis:calc(50% - 8px)!important;height:400px!important}
+.about-img{height:380px!important}
+.form{padding:28px 20px!important}
+}
+@media (max-width: 480px){
+.hero-img{height:520px!important}
+.tile{height:280px!important}
+.card{padding:32px 24px!important}
+.cta{flex:1 1 100%;text-align:center}
+}
+.tile img{transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.tile:hover img{transform:scale(1.05)}
+#lb[hidden]{display:none!important}
+.lb{animation:fadeIn .45s ease both}
+.lb-img{animation:lbIn .6s cubic-bezier(.2,.7,.2,1) both}
+@keyframes lbIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:none}}
+.lb-btn{transition:background-color .4s ease,border-color .4s ease,color .4s ease}
+.lb-btn:hover{background-color:rgba(217,154,165,.16)!important;border-color:var(--accent)!important;color:var(--accent)!important}
+@media (max-width: 860px){.lb-nav{width:44px!important;height:44px!important}.lb-prev{left:8px!important}.lb-next{right:8px!important}.tile .tile-cap{font-size:16px!important;padding:36px 12px 12px!important}}
+@media (prefers-reduced-motion: reduce){.lb,.lb-img{animation:none!important}}
+</style>
+</head>
+<body>
+<div style="--accent: #D99AA5; font-family: 'Jost', system-ui, sans-serif; font-weight: 300; color: #F3E9E6; background: #0B0809; width: 100%; box-sizing: border-box; overflow-x: hidden">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(11,8,9,0.82); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid #2A161B">
+<div style="max-width: 1200px; margin: 0 auto; padding: 20px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="text-decoration: none; font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 400; letter-spacing: 0.34em; color: #F3E9E6">VELLE</a>
+<nav style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px; font-size: 13px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase">
+<a class="nav-link" href="#services" style="text-decoration: none">Бельё</a>
+<a class="nav-link" href="#process" style="text-decoration: none">Как заказать</a>
+<a class="nav-link" href="#works" style="text-decoration: none">Работы</a>
+<a class="nav-link" href="#prices" style="text-decoration: none">Цены</a>
+<a class="btn btn-line" href="#contact" style="text-decoration: none; padding: 13px 22px; border: 1px solid #D99AA5; color: #D99AA5">Записаться</a>
+</nav>
+</div>
+</header>
+
+<section id="top" class="hero" style="max-width: 1200px; margin: 0 auto; padding: 88px 24px 104px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 30px">
+<div class="intro" style="display: flex; align-items: center; gap: 16px; font-size: 12px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: #D99AA5">
+<span style="display: block; width: 48px; height: 1px; background: #D99AA5"></span>
+<span>Lingerie · Пошив на заказ</span>
+</div>
+<h1 class="intro d1" style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(42px, 6.2vw, 84px); line-height: 1.06; letter-spacing: -0.01em">Бельё, созданное <em style="font-style: italic; color: #D99AA5">только для вас</em></h1>
+<p class="intro d2" style="margin: 0; font-size: 19px; line-height: 1.75; color: #C2AEAD; max-width: 500px">Шью женское бельё по вашим меркам: комплекты, бюстгальтеры, боди и пеньюары из кружева и шёлка. Идеальная посадка и комфорт, которых не найти в магазине.</p>
+<div class="intro d3" style="display: flex; flex-wrap: wrap; gap: 14px; padding-top: 8px">
+<a class="btn btn-wine cta" href="#contact" style="text-decoration: none; padding: 18px 34px; background: #7A1F31; color: #F3E9E6; font-weight: 500; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase">Заказать комплект</a>
+<a class="btn btn-line cta" href="#works" style="text-decoration: none; padding: 18px 34px; border: 1px solid #4A2A31; font-weight: 400; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase">Смотреть работы</a>
+</div>
+</div>
+<video class="hero-img intro-img" src="images/hero.mp4" poster="images/poster.jpg" autoplay muted loop playsinline preload="auto" aria-label="Процесс пошива и готовый кружевной комплект VELLE" style="flex: 0 1 440px; min-width: 0; max-width: 100%; height: 640px; object-fit: cover; object-position: center; border: 1px solid #3A1C23; display: block; background: #1A0D11"></video>
+</section>
+
+<section id="services" style="background: #150A0D; border-top: 1px solid #2A161B; border-bottom: 1px solid #2A161B">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: #D99AA5">Коллекция</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px)">Что я шью</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 24px">
+<div class="card reveal" style="flex: 1 1 260px; border: 1px solid #3A1C23; padding: 40px 32px; display: flex; flex-direction: column; gap: 16px">
+<svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D99AA5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9c2 0 4 1 5 4 1-3 3-4 4-4s3 1 4 4c1-3 3-4 5-4"></path><path d="M3 9v-4M21 9v-4"></path><path d="M8 13c0 2 2 3 4 3s4-1 4-3"></path></svg>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 27px; font-weight: 400">Комплекты по меркам</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C2AEAD">Бюстгальтер и трусики, сшитые точно по вашей фигуре — с идеальной посадкой и поддержкой.</p>
+</div>
+<div class="card reveal" style="flex: 1 1 260px; border: 1px solid #3A1C23; padding: 40px 32px; display: flex; flex-direction: column; gap: 16px">
+<svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D99AA5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3l-1 6c0 3 2 4 5 4s5-1 5-4l-1-6"></path><path d="M7 13l-2 8h14l-2-8"></path></svg>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 27px; font-weight: 400">Боди и корсеты</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C2AEAD">Изысканные боди и корсетные модели из кружева и сетки — для особых случаев.</p>
+</div>
+<div class="card reveal" style="flex: 1 1 260px; border: 1px solid #3A1C23; padding: 40px 32px; display: flex; flex-direction: column; gap: 16px">
+<svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#D99AA5" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3l-3 3 1 3-2 12h14l-2-12 1-3-3-3"></path><path d="M9 3c0 2 1.5 3 3 3s3-1 3-3"></path></svg>
+<h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 27px; font-weight: 400">Пеньюары и халаты</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C2AEAD">Домашняя одежда из шёлка и атласа, которая дополнит комплект.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="process">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: #D99AA5">Процесс</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px)">Как проходит заказ</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 36px">
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #7A1F31; padding-top: 24px">
+<div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 46px; color: #D99AA5">01</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">Заявка</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C2AEAD">Пишете мне, рассказываете, какой комплект хотите, присылаете вдохновение.</p>
+</div>
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #7A1F31; padding-top: 24px">
+<div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 46px; color: #D99AA5">02</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">Мерки и материалы</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C2AEAD">Снимаем мерки, выбираем модель, кружево, цвет и фурнитуру.</p>
+</div>
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #7A1F31; padding-top: 24px">
+<div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 46px; color: #D99AA5">03</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">Пошив</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C2AEAD">Шью ваш комплект вручную, с вниманием к каждой детали.</p>
+</div>
+<div class="reveal" style="flex: 1 1 220px; display: flex; flex-direction: column; gap: 12px; border-top: 1px solid #7A1F31; padding-top: 24px">
+<div style="font-family: 'Playfair Display', serif; font-style: italic; font-size: 46px; color: #D99AA5">04</div>
+<h3 style="margin: 0; font-size: 15px; font-weight: 500; letter-spacing: 0.16em; text-transform: uppercase">Готово</h3>
+<p style="margin: 0; font-size: 17px; line-height: 1.7; color: #C2AEAD">Получаете готовое бельё лично или доставкой.</p>
+</div>
+</div>
+</div>
+</section>
+
+<section id="works" style="background: #150A0D; border-top: 1px solid #2A161B; border-bottom: 1px solid #2A161B">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 56px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px">
+<div style="font-size: 12px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: #D99AA5">Портфолио</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px)">Мои работы</h2>
+</div>
+<div style="display: flex; flex-wrap: wrap; gap: 16px">
+<button class="tile reveal" type="button" data-i="0" aria-label="Открыть фото: Красный комплект с портупеей" style="flex: 1 1 300px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #3A1C23; background: #1E1014; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/work1.jpg" alt="Красный комплект с портупеей" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(11,8,9,0), rgba(11,8,9,0.88)); font-family: 'Playfair Display', serif; font-size: 20px; line-height: 1.2; color: #F3E9E6">Красный комплект с портупеей</span>
+</button>
+<button class="tile reveal" type="button" data-i="1" aria-label="Открыть фото: Корсетный топ из красной сетки" style="flex: 1 1 300px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #3A1C23; background: #1E1014; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/work2.jpg" alt="Корсетный топ из красной сетки" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(11,8,9,0), rgba(11,8,9,0.88)); font-family: 'Playfair Display', serif; font-size: 20px; line-height: 1.2; color: #F3E9E6">Корсетный топ из красной сетки</span>
+</button>
+<button class="tile reveal" type="button" data-i="2" aria-label="Открыть фото: Леопардовый комплект" style="flex: 1 1 300px; height: 460px; margin: 0; padding: 0; position: relative; overflow: hidden; border: 1px solid #3A1C23; background: #1E1014; cursor: zoom-in; font: inherit; text-align: left">
+<img src="images/work3.jpg" alt="Леопардовый комплект" style="width: 100%; height: 100%; object-fit: cover; object-position: center; display: block">
+<span class="tile-cap" style="position: absolute; left: 0; right: 0; bottom: 0; display: block; padding: 48px 18px 16px; background: linear-gradient(rgba(11,8,9,0), rgba(11,8,9,0.88)); font-family: 'Playfair Display', serif; font-size: 20px; line-height: 1.2; color: #F3E9E6">Леопардовый комплект</span>
+</button>
+</div>
+</div>
+</section>
+
+<section id="prices">
+<div class="sec" style="max-width: 900px; margin: 0 auto; padding: 104px 24px; display: flex; flex-direction: column; gap: 40px">
+<div class="reveal" style="display: flex; flex-direction: column; gap: 14px; align-items: center; text-align: center">
+<div style="font-size: 12px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: #D99AA5">Стоимость</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px)">Цены</h2>
+<p style="margin: 0; font-size: 17px; color: #C2AEAD">Точная стоимость зависит от модели и материалов.</p>
+</div>
+<div style="display: flex; flex-direction: column; border-top: 1px solid #3A1C23">
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A1C23"><span style="font-family: 'Playfair Display', serif; font-size: 25px">Комплект</span><span style="font-size: 17px; font-weight: 400; color: #D99AA5">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A1C23"><span style="font-family: 'Playfair Display', serif; font-size: 25px">Бюстгальтер</span><span style="font-size: 17px; font-weight: 400; color: #D99AA5">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A1C23"><span style="font-family: 'Playfair Display', serif; font-size: 25px">Трусики</span><span style="font-size: 17px; font-weight: 400; color: #D99AA5">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A1C23"><span style="font-family: 'Playfair Display', serif; font-size: 25px">Боди</span><span style="font-size: 17px; font-weight: 400; color: #D99AA5">от [ЦЕНА] ₽</span></div>
+<div class="row reveal" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 12px; padding: 24px 0; border-bottom: 1px solid #3A1C23"><span style="font-family: 'Playfair Display', serif; font-size: 25px">Пеньюар</span><span style="font-size: 17px; font-weight: 400; color: #D99AA5">от [ЦЕНА] ₽</span></div>
+</div>
+</div>
+</section>
+
+<section style="background: #2A0F16; border-top: 1px solid #3A1C23; border-bottom: 1px solid #3A1C23">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
+<div class="about-img reveal" style="flex: 1 1 320px; min-width: 0; height: 480px; background: #1E1014; border: 1px solid #4A2A31; display: flex; align-items: center; justify-content: center; color: #B79DA1; font-size: 14px; text-align: center; padding: 20px; box-sizing: border-box">[Ваше фото за работой]</div>
+<div class="reveal" style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="font-size: 12px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: #D99AA5">О мастере</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px)">Обо мне</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #D3C2C2">Меня зовут [ВАШЕ ИМЯ]. [Пара предложений о себе: почему шьёте бельё, что для вас важно в каждом комплекте.]</p>
+<p style="margin: 0; font-size: 18px; line-height: 1.8; color: #D3C2C2">[Ваш город / работаете ли с доставкой.]</p>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="sec" style="max-width: 1200px; margin: 0 auto; padding: 104px 24px; display: flex; flex-wrap: wrap; gap: 64px">
+<div class="reveal" style="flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div style="font-size: 12px; font-weight: 400; letter-spacing: 0.32em; text-transform: uppercase; color: #D99AA5">Запись</div>
+<h2 style="margin: 0; font-family: 'Playfair Display', serif; font-weight: 400; font-size: clamp(34px, 4.4vw, 54px)">Заказать бельё</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.7; color: #C2AEAD">Оставьте заявку или напишите напрямую — отвечу и подберём ваш идеальный комплект.</p>
+<div style="display: flex; flex-direction: column; gap: 14px; font-size: 17px; font-weight: 400; padding-top: 8px">
+<a href="[ССЫЛКА НА TELEGRAM]">Telegram: [@ваш_ник]</a>
+<a href="[ССЫЛКА НА INSTAGRAM]">Instagram: [@ваш_ник]</a>
+<a href="tel:[ТЕЛЕФОН]">[+7 ТЕЛЕФОН]</a>
+</div>
+</div>
+<form class="form reveal" style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 20px; background: #150A0D; border: 1px solid #3A1C23; padding: 40px 36px; box-sizing: border-box">
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #C2AEAD">Имя<input type="text" placeholder="Как к вам обращаться" style="font: inherit; font-family: 'Jost', sans-serif; letter-spacing: normal; text-transform: none; font-weight: 300; font-size: 17px; padding: 14px 0; border: none; border-bottom: 1px solid #4A2A31; border-radius: 0; background: transparent; color: #F3E9E6"></label>
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #C2AEAD">Телефон или Telegram<input type="text" placeholder="Куда вам ответить" style="font: inherit; font-family: 'Jost', sans-serif; letter-spacing: normal; text-transform: none; font-weight: 300; font-size: 17px; padding: 14px 0; border: none; border-bottom: 1px solid #4A2A31; border-radius: 0; background: transparent; color: #F3E9E6"></label>
+<label style="display: flex; flex-direction: column; gap: 10px; font-size: 12px; font-weight: 400; letter-spacing: 0.18em; text-transform: uppercase; color: #C2AEAD">Что хотите заказать<textarea rows="3" placeholder="Например: кружевной комплект в бордовом цвете" style="font: inherit; font-family: 'Jost', sans-serif; letter-spacing: normal; text-transform: none; font-weight: 300; font-size: 17px; padding: 14px 0; border: none; border-bottom: 1px solid #4A2A31; border-radius: 0; background: transparent; color: #F3E9E6; resize: vertical"></textarea></label>
+<button class="btn btn-wine" type="button" style="margin-top: 8px; font-family: 'Jost', sans-serif; font-weight: 500; font-size: 13px; letter-spacing: 0.2em; text-transform: uppercase; padding: 18px 28px; border: none; background: #7A1F31; color: #F3E9E6; cursor: pointer">Отправить заявку</button>
+</form>
+</div>
+</section>
+
+<footer style="border-top: 1px solid #2A161B">
+<div style="max-width: 1200px; margin: 0 auto; padding: 32px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; font-size: 14px; color: #8F7A7D">
+<span style="font-family: 'Playfair Display', serif; font-size: 20px; letter-spacing: 0.34em; color: #F3E9E6">VELLE</span>
+<span>© 2026 · Пошив женского белья на заказ</span>
+</div>
+</footer>
+
+<div id="lb" hidden class="lb" role="dialog" aria-modal="true" aria-label="Просмотр фото" style="position: fixed; inset: 0; z-index: 100; background: rgba(8,5,6,0.95); display: flex; align-items: center; justify-content: center">
+<button type="button" data-lb="close" aria-label="Закрыть просмотр" style="position: absolute; inset: 0; border: none; background: transparent; cursor: zoom-out"></button>
+<div style="position: relative; z-index: 1; pointer-events: none; display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 72px 16px 24px; box-sizing: border-box; max-width: 100%; max-height: 100%">
+<img id="lb-img" class="lb-img" src="images/work1.jpg" alt="" style="display: block; max-width: min(100%, 900px); max-height: calc(100vh - 170px); width: auto; height: auto; object-fit: contain; border: 1px solid #3A1C23">
+<div style="display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 8px 18px; text-align: center">
+<span id="lb-cap" style="font-family: 'Playfair Display', serif; font-size: 24px; color: #F3E9E6"></span>
+<span id="lb-count" style="font-size: 12px; font-weight: 400; letter-spacing: 0.24em; color: #D99AA5"></span>
+</div>
+</div>
+<button class="lb-btn" type="button" data-lb="close" aria-label="Закрыть" style="position: absolute; top: 16px; right: 16px; z-index: 2; width: 48px; height: 48px; border-radius: 50%; border: 1px solid #4A2A31; background: rgba(11,8,9,0.6); color: #F3E9E6; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg>
+</button>
+<button class="lb-btn lb-nav lb-prev" type="button" data-lb="prev" aria-label="Предыдущее фото" style="position: absolute; left: 24px; top: 50%; margin-top: -28px; z-index: 2; width: 56px; height: 56px; border-radius: 50%; border: 1px solid #4A2A31; background: rgba(11,8,9,0.6); color: #F3E9E6; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg>
+</button>
+<button class="lb-btn lb-nav lb-next" type="button" data-lb="next" aria-label="Следующее фото" style="position: absolute; right: 24px; top: 50%; margin-top: -28px; z-index: 2; width: 56px; height: 56px; border-radius: 50%; border: 1px solid #4A2A31; background: rgba(11,8,9,0.6); color: #F3E9E6; cursor: pointer; display: flex; align-items: center; justify-content: center; padding: 0">
+<svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg>
+</button>
+</div>
+
+<script>
+(function(){
+var caps=["Красный комплект с портупеей", "Корсетный топ из красной сетки", "Леопардовый комплект"],imgs=['images/work1.jpg','images/work2.jpg','images/work3.jpg'];
+var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function smoothTo(y){var s=window.pageYOffset,d=y-s,dur=reduce?0:Math.min(1600,700+Math.abs(d)*0.25),t0=null;
+function e(t){return t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2}
+function st(ts){if(t0===null)t0=ts;var p=dur?Math.min(1,(ts-t0)/dur):1;window.scrollTo(0,s+d*e(p));if(p<1)requestAnimationFrame(st)}
+requestAnimationFrame(st)}
+document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(ev){var id=a.getAttribute('href').slice(1);var el=document.getElementById(id);if(!el)return;ev.preventDefault();smoothTo(id==='top'?0:el.getBoundingClientRect().top+window.pageYOffset-84)})});
+var lb=document.getElementById('lb'),img=document.getElementById('lb-img'),cap=document.getElementById('lb-cap'),cnt=document.getElementById('lb-count'),cur=0,last=null;
+function show(i){cur=(i+caps.length)%caps.length;img.src=imgs[cur];img.alt=caps[cur];cap.textContent=caps[cur];cnt.textContent=(cur+1)+' / '+caps.length;img.classList.remove('lb-img');void img.offsetWidth;img.classList.add('lb-img')}
+function open(i){last=document.activeElement;show(i);lb.hidden=false;document.body.style.overflow='hidden';lb.querySelector('.lb-btn[data-lb="close"]').focus()}
+function close(){lb.hidden=true;document.body.style.overflow='';if(last)last.focus()}
+document.querySelectorAll('[data-i]').forEach(function(b){b.addEventListener('click',function(){open(+b.getAttribute('data-i'))})});
+lb.querySelectorAll('[data-lb]').forEach(function(b){b.addEventListener('click',function(){var a=b.getAttribute('data-lb');if(a==='close')close();else if(a==='prev')show(cur-1);else show(cur+1)})});
+document.addEventListener('keydown',function(e){if(lb.hidden)return;if(e.key==='Escape')close();if(e.key==='ArrowLeft')show(cur-1);if(e.key==='ArrowRight')show(cur+1)});
+var sx=null;lb.addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});lb.addEventListener('touchend',function(e){if(sx===null)return;var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>50)show(cur+(dx<0?1:-1));sx=null});
+var v=document.querySelector('video.hero-img');if(v){v.muted=true;var p=v.play();if(p&&p.catch)p.catch(function(){})}
+})();
+</script>
+</body>
+</html>
